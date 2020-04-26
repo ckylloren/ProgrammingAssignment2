@@ -3,7 +3,6 @@
 ## makeCacheMatrix creates a list of functions that can get the data, set the inverse, and retrieve the inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
-  #print(class(x))
   inverse <- NULL
   get <- function() x #returns x
   setinverse <- function(solve) inverse <<- solve
